@@ -6,8 +6,9 @@ import plotly.graph_objects as go
 from datetime import datetime, timedelta
 import numpy as np
 
+tokenGenAI = st.secrets["API_KEY_GENAI"]
 # Configuración API Gemini
-tokenGenAI = "AIzaSyDszMjWsiT61U6jK_Kpn2ghSzR0rzhn2IE"
+
 client = genai.Client(api_key=tokenGenAI)
 
 # Configuración general
